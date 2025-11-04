@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Header } from './components/header/Header'
-import { Footer } from './components/footer/Footer'
-import { Carrossel } from './components/carrossel/Carrossel'
+import Header  from './components/header/Header'
+import Footer  from './components/footer/Footer'
+import Carrossel from './components/carrossel/Carrossel'
 import './App.css'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <h1>Eu</h1>
       </div>
       <Carrossel></Carrossel>
-      <Footer />
+      <Footer /> 
     </>
   )
 }
