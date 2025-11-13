@@ -2,13 +2,13 @@ import "./Header.css"
 
 function Header(){
   return <>
-    <header>
+    <header id="header">
       <ul>
-        <a href="#">Perfil</a>
+        <a href="#perfil-esquerdo">Perfil</a>
         <a href="#">Formação</a>
-        <a href="#">Tecnologias</a>
-        <a href="#">Projetos </a>
-        <a href="#">Rodapé</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos </a>
+        <a href="#footer">Rodapé</a>
 
       </ul>
     </header>

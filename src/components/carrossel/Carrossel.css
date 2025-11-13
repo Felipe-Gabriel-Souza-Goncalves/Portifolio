@@ -1,0 +1,26 @@
+.carrossel{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  background: #222;
+}
+
+.carrossel .btn-prev button,
+.carrossel .btn-post button{
+  height: 100%;
+}
+
+.carrossel .btn-prev button{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.carrossel .btn-post button{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-prev img{
+  rotate: 180deg;
+}

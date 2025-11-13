@@ -2,7 +2,13 @@ import "./Footer.css"
 
 function Footer(){
   return <>
-    <h1>Footer</h1>
+    <footer id="footer">
+      <div></div>
+      <div>
+        <a href="#header"><strong>Voltar ao topo</strong></a>
+      </div>
+      <div></div>
+    </footer>
   </>
 }
 
