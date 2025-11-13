@@ -1,4 +1,4 @@
-import * as images from "./imagens";
+import { imgProjetos, imgTecnologias } from "./imagens.js";
 
 const projetos = [
   {
@@ -7,7 +7,7 @@ const projetos = [
     descricao: "",
     link: "https://felipegsg.github.io/projeto-back-end-final-2024/",
     linguagens: ["html", "javascript"],
-    img: "amazon.png",
+    img: imgProjetos.edu.amazon,
     educacional: true,
   },
   {
@@ -156,20 +156,37 @@ const projetos = [
   },
 ];
 
-const tecnologias = [
-  {
-    backEnd: [
-        ["Javascript", "Python", "Java", "Node.js", "Dart", "PHP"], 
-        []
+const tecnologias = {
+  backEnd: [
+    ["Javascript", "Python", "Java", "Node.js", "Dart", "PHP"],
+    [
+      imgTecnologias.back.javascript,
+      imgTecnologias.back.python,
+      imgTecnologias.back.java,
+      imgTecnologias.back.node,
+      imgTecnologias.back.dart,
+      imgTecnologias.back.php,
     ],
-    frontEnd: [
-      ["HTML", "CSS", "React", "Flutter"],
+  ],
+  frontEnd: [
+    ["HTML", "CSS", "React", "Flutter"],
+    [
+      imgTecnologias.front.html,
+      imgTecnologias.front.css,
+      imgTecnologias.front.react,
+      imgTecnologias.front.flutter,
     ],
-    outros: [
-      ["Git", "Postman", "MySQL", "Figma", "Vscode"],
-      []
+  ],
+  outros: [
+    ["Git", "Postman", "MySQL", "Figma", "Vscode"],
+    [
+      imgTecnologias.outros.git,
+      imgTecnologias.outros.postman,
+      imgTecnologias.outros.mysql,
+      imgTecnologias.outros.figma,
+      imgTecnologias.outros.vscode,
     ],
-  },
-];
+  ],
+};
 
-export default { projetos, tecnologias };
+export { projetos, tecnologias };

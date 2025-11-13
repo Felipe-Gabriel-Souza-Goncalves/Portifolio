@@ -1,10 +1,8 @@
 import seta from "../../assets/icons/setaDireita.svg";
-import { imgProjetos, imgTecnologias } from "../../utils/imagens.js";
-import projetos from "../../utils/projetos.js";
+import { projetos, tecnologias } from "../../utils/projetos.js";
 import "./Carrossel.css";
 
 function Carrossel({ categoria }) {
-  console.log(imgProjetos);
 
   return (
     <>
@@ -12,15 +10,50 @@ function Carrossel({ categoria }) {
         <div className="btn-prev">
           <button>
             <img src={seta} alt="<" />
-
           </button>
         </div>
 
-        <div className="itensCarrossel">{}</div>
+        {/* Itens do carrossel */}
+        <div className="itensCarrossel">
+          {(() => {
+            switch (categoria) {
+              case "front-end":
+
+                return tecnologias.frontEnd[0].map((nome, i) => (
+                  <div key={i} className="card-tech">
+                    <img style={{width: "40px"}} src={tecnologias.frontEnd[1][i]} alt={nome} />
+                    <h2>{nome}</h2>
+                  </div>
+                ));
+
+              case "back-end":
+
+                return tecnologias.backEnd[0].map((nome, i) => (
+                  <div key={i} className="card-tech">
+                    <img style={{width: "40px"}} src={tecnologias.backEnd[1][i]} alt={nome} />
+                    <h2>{nome}</h2>
+                  </div>
+                ));
+
+              case "outros":
+
+                return tecnologias.outros[0].map((nome, i) => (
+                  <div key={i} className="card-tech">
+                    <img style={{width: "40px"}} src={tecnologias.outros[1][i]} alt={nome} />
+                    <h2>{nome}</h2>
+                    {console.log(nome)}
+                  </div>
+                ));
+
+              default:
+                return <div>Categoria não especificada</div>;
+            }
+          })()}
+        </div>
 
         <div className="btn-post">
           <button>
-            <img src={seta} alt=">" />
+            <img src={seta} alt="<" />
           </button>
         </div>
       </div>

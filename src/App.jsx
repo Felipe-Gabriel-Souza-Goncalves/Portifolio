@@ -5,6 +5,7 @@ import Carrossel from './components/carrossel/Carrossel'
 import Filtro from './components/filtro/Filtro'
 import './App.css'
 import Perfil from './components/perfil/Perfil'
+import Tecnologias from './components/tecnologias/Tecnologias'
 
 function App() {
 
@@ -14,8 +15,7 @@ function App() {
       <Perfil/>
       {/* <Filtro /> */}
 
-
-      <Carrossel></Carrossel>
+      <Tecnologias />
       <Footer /> 
     </>
   )
