@@ -3,7 +3,12 @@ import "./Footer.css"
 function Footer(){
   return <>
     <footer id="footer">
-      <div></div>
+      <div>
+        <span><a target="_blank" href=""></a></span>
+        <span><a target="_blank" href="https://github.com/FelipeGSG">Educacional</a></span>
+        <span><a target="_blank" href="https://github.com/Felipe-Gabriel-Souza-Goncalves">Pessoal</a></span>
+
+      </div>
       <div>
         <a href="#header"><strong>Voltar ao topo</strong></a>
       </div>

@@ -21,7 +21,7 @@ function Carrossel({ categoria }) {
 
                 return tecnologias.frontEnd[0].map((nome, i) => (
                   <div key={i} className="card-tech">
-                    <img style={{width: "40px"}} src={tecnologias.frontEnd[1][i]} alt={nome} />
+                    <img className="img-item-carrossel" src={tecnologias.frontEnd[1][i]} alt={nome} />
                     <h2>{nome}</h2>
                   </div>
                 ));
@@ -30,7 +30,7 @@ function Carrossel({ categoria }) {
 
                 return tecnologias.backEnd[0].map((nome, i) => (
                   <div key={i} className="card-tech">
-                    <img style={{width: "40px"}} src={tecnologias.backEnd[1][i]} alt={nome} />
+                    <img className="img-item-carrossel" src={tecnologias.backEnd[1][i]} alt={nome} />
                     <h2>{nome}</h2>
                   </div>
                 ));
@@ -39,7 +39,7 @@ function Carrossel({ categoria }) {
 
                 return tecnologias.outros[0].map((nome, i) => (
                   <div key={i} className="card-tech">
-                    <img style={{width: "40px"}} src={tecnologias.outros[1][i]} alt={nome} />
+                    <img className="img-item-carrossel" src={tecnologias.outros[1][i]} alt={nome} />
                     <h2>{nome}</h2>
                     {console.log(nome)}
                   </div>

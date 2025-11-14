@@ -56,7 +56,7 @@ import node from "../assets/technologies/node.png";
 import php from "../assets/technologies/php.png";
 import postman from "../assets/technologies/postman.webp";
 import python from "../assets/technologies/python.png";
-import react from "../assets/technologies/react.svg";
+import react from "../assets/technologies/react.png";
 import vscode from "../assets/technologies/vscode.svg";
 
 const imgTecnologias = {

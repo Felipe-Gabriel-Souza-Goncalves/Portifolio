@@ -46,3 +46,7 @@
 .card-tech h2 {
   margin: 0;
 }
+.img-item-carrossel{
+  height: 50px;
+  /* aspect-ratio: 1 / 1; */
+}
