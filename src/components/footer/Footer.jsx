@@ -4,9 +4,9 @@ function Footer(){
   return <>
     <footer id="footer">
       <div>
-        <span><a target="_blank" href=""></a></span>
-        <span><a target="_blank" href="https://github.com/FelipeGSG">Educacional</a></span>
-        <span><a target="_blank" href="https://github.com/Felipe-Gabriel-Souza-Goncalves">Pessoal</a></span>
+        <span>Repositório: <a target="_blank" href="https://github.com/Felipe-Gabriel-Souza-Goncalves/Portifolio">Portifólio</a></span>
+        <span>Github: <a target="_blank" href="https://github.com/FelipeGSG">Educacional</a></span>
+        <span>Github: <a target="_blank" href="https://github.com/Felipe-Gabriel-Souza-Goncalves">Pessoal</a></span>
 
       </div>
       <div>

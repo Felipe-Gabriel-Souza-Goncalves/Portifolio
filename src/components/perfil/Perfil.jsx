@@ -17,6 +17,9 @@ export default function Perfil(){
           <p>Linkedin:
             <a target="_blank" href="https://www.linkedin.com/in/felipe-gabriel-souza-gonçalves-b78779358"  rel="noopener noreferrer">&nbsp;Felipe Gabriel</a>
           </p>
+          <p>LeetCode:
+            <a target="_blank" href="https://leetcode.com/u/felipe-gabriel-souza-goncalves/"  rel="noopener noreferrer">&nbsp;Felipe Gabriel</a>
+          </p>
         </div>
       </div>
       <div id="perfil-direito">

@@ -6,6 +6,7 @@ import Filtro from './components/filtro/Filtro'
 import './App.css'
 import Perfil from './components/perfil/Perfil'
 import Tecnologias from './components/tecnologias/Tecnologias'
+import Projetos from './components/projetos/Projetos'
 
 function App() {
 
@@ -13,9 +14,9 @@ function App() {
     <>
       <Header />
       <Perfil/>
-      {/* <Filtro /> */}
 
       <Tecnologias />
+      <Projetos />
       <Footer /> 
     </>
   )

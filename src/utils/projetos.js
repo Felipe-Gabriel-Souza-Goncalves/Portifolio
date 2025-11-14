@@ -16,7 +16,7 @@ const projetos = [
     descricao: "",
     link: "https://felipegsg.github.io/Mercadinho-Nota-Fiscal/",
     linguagens: ["html", "javascript"],
-    img: "ecogoods.png",
+    img: imgProjetos.edu.ecogoods,
     educacional: true,
   },
   {
@@ -25,7 +25,7 @@ const projetos = [
     descricao: "",
     link: "https://chat-fake-classroom.onrender.com/",
     linguagens: ["html", "javascript"],
-    img: "fake classroom.png",
+    img: imgProjetos.edu.fakeClassroom,
     educacional: true,
   },
   {
@@ -34,7 +34,7 @@ const projetos = [
     descricao: "",
     link: "https://felipegsg.github.io/Portifolio-jogos/",
     linguagens: ["html", "javascript"],
-    img: "hallownest.png",
+    img: imgProjetos.edu.hallownest,
     educacional: true,
   },
   {
@@ -43,7 +43,7 @@ const projetos = [
     descricao: "",
     link: "https://sistema-ocorrencias.onrender.com/",
     linguagens: ["html", "javascript"],
-    img: "ocorrencias.png",
+    img: imgProjetos.edu.ocorrencias,
     educacional: true,
   },
   {
@@ -52,7 +52,7 @@ const projetos = [
     descricao: "",
     link: "https://python-e-flask.onrender.com/poo",
     linguagens: ["html", "python"],
-    img: "python flask.png",
+    img: imgProjetos.edu.pythonFlask,
     educacional: true,
   },
   {
@@ -61,7 +61,7 @@ const projetos = [
     descricao: "",
     link: "https://primeiro-projeto-react-steel-phi.vercel.app/",
     linguagens: ["html", "react"],
-    img: "react vite.png",
+    img: imgProjetos.edu.reactVite,
     educacional: true,
   },
   {
@@ -70,7 +70,7 @@ const projetos = [
     descricao: "",
     link: "https://projeto-reactvite-blue.vercel.app/",
     linguagens: ["html", "javascript"],
-    img: "techsolutions.png",
+    img: imgProjetos.edu.techsolutions,
     educacional: true,
   },
   {
@@ -79,7 +79,7 @@ const projetos = [
     descricao: "",
     link: "https://felipegsg.github.io/to-do-list-localStorage/",
     linguagens: ["html", "javascript"],
-    img: "todo list.png",
+    img: imgProjetos.edu.todoList,
     educacional: true,
   },
   {
@@ -88,7 +88,7 @@ const projetos = [
     descricao: "",
     link: "https://jogo-clique-bolinha.onrender.com/",
     linguagens: ["html", "javascript"],
-    img: "clique bolinha.png",
+    img: imgProjetos.priv.cliqueBolinha,
     educacional: false,
   },
   {
@@ -97,7 +97,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/fake-cookie-clicker/",
     linguagens: ["html", "javascript"],
-    img: "cookie clicker.png",
+    img: imgProjetos.priv.cookieClicker,
     educacional: false,
   },
   {
@@ -106,7 +106,7 @@ const projetos = [
     descricao: "",
     link: "https://felipegsg.github.io/ecommerce-finalizado/",
     linguagens: ["html", "javascript"],
-    img: "ecommerce.png",
+    img: imgProjetos.priv.ecommerce,
     educacional: false,
   },
   {
@@ -115,7 +115,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/Jogo-da-velha/",
     linguagens: ["html", "javascript"],
-    img: "jogo da velha.png",
+    img: imgProjetos.priv.jogoDaVelha,
     educacional: false,
   },
   {
@@ -124,7 +124,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/criador-matriz/matriz.html",
     linguagens: ["html", "javascript"],
-    img: "matrizes.png",
+    img: imgProjetos.priv.matrizes,
     educacional: false,
   },
   {
@@ -133,7 +133,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/Projeto-Relogio/",
     linguagens: ["html", "javascript"],
-    img: "relogio.png",
+    img: imgProjetos.priv.relogio,
     educacional: false,
   },
   {
@@ -142,7 +142,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/RBG-Clip-Path-HTML/",
     linguagens: ["html", "javascript"],
-    img: "rgb.png",
+    img: imgProjetos.priv.rgb,
     educacional: false,
   },
   {
@@ -151,7 +151,7 @@ const projetos = [
     descricao: "",
     link: "https://felipe-gabriel-souza-goncalves.github.io/Senhas_Aleatorias/",
     linguagens: ["html", "javascript"],
-    img: "senhas aleatorias.png",
+    img: imgProjetos.priv.senhasAleatorias,
     educacional: false,
   },
 ];
