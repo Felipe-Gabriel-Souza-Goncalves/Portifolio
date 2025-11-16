@@ -11,12 +11,12 @@ export default function Tecnologias(){
 
       <div id="projetos-educacional">
         <h3>Educacionais</h3>
-        <Carrossel categoria="educacional"/>
+        <Carrossel tipo="projeto" categoria="educacional"/>
       </div>
 
       <div id="projetos-pessoal">
         <h3>Pessoais</h3>
-        <Carrossel categoria="pessoal"/>
+        <Carrossel tipo="projeto" categoria="pessoal"/>
       </div>
 
 

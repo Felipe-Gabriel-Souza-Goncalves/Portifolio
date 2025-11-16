@@ -3,9 +3,9 @@ import seta from "../../assets/icons/setaDireita.svg";
 import { projetos, tecnologias } from "../../utils/projetos.js";
 import "./Carrossel.css";
 
-function Carrossel({ categoria }) {
+function Carrossel({ tipo, categoria }) {
   const [crr, moveItem] = useState(undefined);
-  const [posX, translate] = useState (0)
+  const [posX, translate] = useState(0);
 
   function prevItem() {
     const itens = document.querySelectorAll(`#carrossel-${categoria} div`);
@@ -32,13 +32,24 @@ function Carrossel({ categoria }) {
     }
 
     itens[pos].classList.add("item-ativo");
-    if(categoria == "educacional" || categoria == "pessoal"){
-
+    if (categoria == "educacional" || categoria == "pessoal") {
+      updateProjetos(pos);
     }
   }
 
-  function translateCarrossel(){
+  function updateProjetos(pos) {
+    const itens = document.querySelectorAll(`#carrossel-${categoria} div`);
+    console.log(itens.length);
 
+    // esconde todos primeiro
+    itens.forEach((i) => (i.style.display = "none"));
+
+    // calcula começo seguro
+    let start = Math.min(Math.max(pos, 0), itens.length - 2);
+
+    // mostra apenas 2
+    itens[start].style.display = "block";
+    itens[start + 1].style.display = "block";
   }
 
   return (
@@ -92,28 +103,24 @@ function Carrossel({ categoria }) {
                 return projetos
                   .filter((p) => p.educacional == true)
                   .map((projeto, i) => (
-                    <div key={i} className="card-projetos">
-                      <img
-                        className="img-item-carrossel"
-                        src={projeto.img}
-                        alt={projeto.nome}
-                      />
-                      <h2>{projeto.nome}</h2>
-                    </div>
+                    <a target="_blank" href={projeto.link}>
+                      <div key={i} className="card-projetos">
+                        <img className="img-item-carrossel" src={projeto.img} alt={projeto.nome} />
+                        <h2>{projeto.nome}</h2>
+                      </div>
+                    </a>
                   ));
 
               case "pessoal":
                 return projetos
                   .filter((p) => p.educacional == false)
                   .map((projeto, i) => (
-                    <div key={i} className="card-projetos">
-                      <img
-                        className="img-item-carrossel"
-                        src={projeto.img}
-                        alt={projeto.nome}
-                      />
-                      <h2>{projeto.nome}</h2>
-                    </div>
+                    <a target="_blank" href={projeto.link}>
+                      <div key={i} className="card-projetos">
+                        <img className="img-item-carrossel" src={projeto.img} alt={projeto.nome} />
+                        <h2>{projeto.nome}</h2>
+                      </div>
+                    </a>
                   ));
 
               default:

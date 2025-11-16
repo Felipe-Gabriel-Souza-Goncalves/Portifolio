@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   background: #222;
+  border-radius: 12px;
 }
 
 .carrossel .btn-prev button,
@@ -27,8 +28,9 @@
 }
 
 .itensCarrossel:has(.card-tech){
-  display: flex ;
+  display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 
@@ -79,4 +81,22 @@
 .card-projetos img{
   width: 500px;
   height: unset;
+}
+
+@media (prefers-color-scheme: light) {
+  .item-ativo,
+  .card-tech:hover,
+  .card-projetos:hover{
+    border: 1px solid #d1d1d1;
+    background-color: #e7e7e7;
+  }
+  
+  .carrossel{
+    background-color: #ccc;
+  }
+
+  .card-tech,
+  .card-projetos{
+    background: #f4f4f4;
+  }
 }
