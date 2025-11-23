@@ -45,11 +45,12 @@ function Carrossel({ tipo, categoria }) {
     itens.forEach((i) => (i.style.display = "none"));
 
     // calcula começo seguro
-    let start = Math.min(Math.max(pos, 0), itens.length - 2);
+    let start = Math.min(Math.max(pos, 0), itens.length - 1);
 
     // mostra apenas 2
     itens[start].style.display = "block";
-    itens[start + 1].style.display = "block";
+
+    start == itens.length - 1 ? "" : itens[start + 1].style.display = "block";
   }
 
   return (
@@ -103,24 +104,24 @@ function Carrossel({ tipo, categoria }) {
                 return projetos
                   .filter((p) => p.educacional == true)
                   .map((projeto, i) => (
-                    <a target="_blank" href={projeto.link}>
-                      <div key={i} className="card-projetos">
+                    <div key={i} className="card-projetos">
+                      <a target="_blank" href={projeto.link}>
                         <img className="img-item-carrossel" src={projeto.img} alt={projeto.nome} />
                         <h2>{projeto.nome}</h2>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
                   ));
 
               case "pessoal":
                 return projetos
                   .filter((p) => p.educacional == false)
                   .map((projeto, i) => (
-                    <a target="_blank" href={projeto.link}>
-                      <div key={i} className="card-projetos">
+                    <div key={i} className="card-projetos">
+                      <a target="_blank;" href={projeto.link}>
                         <img className="img-item-carrossel" src={projeto.img} alt={projeto.nome} />
                         <h2>{projeto.nome}</h2>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
                   ));
 
               default:
